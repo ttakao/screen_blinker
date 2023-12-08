@@ -1,12 +1,45 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>スクリーン点滅アプリ</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="script.js"></script>
+  <title>Brink Color</title>
 </head>
 <body>
-    <p>TEST</p>
+<p>test</p>
+
+<dialog id="colorDialog">
+<div>
+<input type="color" id="colorSelector" name="colorSelector" value="#ffffff" />
+<label for="colorSelector">色を選ぶ</label>
+</div>
+<button id="saveColor" onclick="saveColor();">保管</button>
+</dialog>
+
+<dialog id="blinkDialog">
+<div>
+<input type="range" id="blinkSlider" name="blinkSlider" min="100" max="1000" />
+<label for="blinkSlider">点滅速度(ミリ秒)</label>
+</div>
+<button id="saveBlink" onclick="saveBlink();">保管</button>
+</dialog>
+
+<dialog id="aboutDialog">
+<p>著作権：株式会社マインド・クラフト 2023</p>
+<button id="closeAbout" onclick="closeAbout();">閉じる</button>
+</dialog>
+
+<footer>
+<div id="menu">
+<ul>
+<li><button type="button" id="btnColor" onclick="colorDialog.show();">カラー</button></li>
+<li><button type="button" id="btnBlink" onclick="blinkDialog.show();">点滅速度</button></li>
+<li><button type="button" id="btnAbout" onclick="aboutDialog.show();">About</button></li>
+<li><button type="button" id="btnStartStap" onclick="go_stop()">スタート・ストップ</button></li>
+</ul>
+</div>
+</footer>
 </body>
 </html>
