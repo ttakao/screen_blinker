@@ -7,7 +7,7 @@ function saveColor(){
   let color = document.getElementById('colorSelector').value
   blinkColor = color
   document.body.style.backgroundColor = color
-  console.log("color:"+blinkColor)
+  console.log("color:"+blinkColor/2)
   colorDlg.close()
 }
 
