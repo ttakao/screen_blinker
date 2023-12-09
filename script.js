@@ -27,16 +27,10 @@ function closeAbout(){
 
 function doBlink(){
   if (document.body.style.backgroundColor == blinkBlack){
-    console.log("color")
     document.body.style.backgoundColor = blinkColor
   } else {
-    console.log("black")
     document.body.style.backgoundColor = blinkBlack
   }
-  console.log("passed")
- // setTimeout( function(){
- //   document.body.style.backgroundColor = blinkColor
- // }, blinkFreq/2)
 }
 function blinkStart(){
   console.log("pushed")
