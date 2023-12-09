@@ -36,12 +36,4 @@ footer li button{
   background-color: #ffffff;
 }
 
-dialog[open]{
-  border: none;
-  border-radius:  0.5rem;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  width: 30rem;
-}
 
