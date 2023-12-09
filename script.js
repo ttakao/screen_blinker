@@ -1,5 +1,6 @@
 let blinkFreq=300
 let blinkColor = "#ffffff"
+let blinkBlack = "#000000"
 let timerID
 
 function saveColor(){
@@ -25,11 +26,15 @@ function closeAbout(){
 }
 
 function doBlink(){
-  document.body.style.backgroundColor = "#000000"
+  if (document.body.style.backgroundColor == blinkBlack){
+    document.body.style.backgoundColor = blinkColor
+  } else {
+    document.body.style.backgoundColor = blinkBlack
+  }
 
-  setTimeout( function(){
-    document.body.style.backgroundColor = blinkColor
-  }, blinkFreq/2)
+ // setTimeout( function(){
+ //   document.body.style.backgroundColor = blinkColor
+ // }, blinkFreq/2)
 }
 function blinkStart(){
   console.log("pushed")
