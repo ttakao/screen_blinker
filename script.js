@@ -7,7 +7,7 @@ function saveColor(){
   let color = document.getElementById('colorSelector').value
   blinkColor = color
   document.body.style.backgroundColor = color
-  console.log("color:"+blinkColor/2)
+  console.log("color:"+blinkColor)
   colorDlg.close()
 }
 
@@ -29,7 +29,7 @@ function doBlink(){
 
   setTimeout( function(){
     document.body.style.backgroundColor = blinkColor
-  }, blinkFreq)
+  }, blinkFreq/2)
 }
 function blinkStart(){
   console.log("pushed")
