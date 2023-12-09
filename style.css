@@ -36,4 +36,18 @@ footer li button{
   background-color: #ffffff;
 }
 
+dialog[open]{
+  border: none;
+  border-radius:0.5rem;
+  box-shadow: 0 4px 16px rgba(0 0 0 / 16%);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width:20rem;
+  align: center;
+}
+dialog input{
+  width: 10rem;
+  text-align: center;
+}
 
