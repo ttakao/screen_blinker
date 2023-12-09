@@ -31,7 +31,7 @@ function doBlink(){
   } else {
     document.body.style.backgoundColor = blinkBlack
   }
-
+  console.log("passed")
  // setTimeout( function(){
  //   document.body.style.backgroundColor = blinkColor
  // }, blinkFreq/2)
